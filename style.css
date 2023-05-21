@@ -16,6 +16,8 @@
 
 a {
     display: inline-block;
+    text-decoration: none;
+    color: #ccc;
 }
 
 body {
@@ -39,13 +41,26 @@ h1 {
     z-index: 9;
 }
 
+.qrs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 img {
-    height: 16em;
+    width: 16em;
     margin: 1.5em;
     will-change: filter;
     transition: filter 300ms;
     border-radius: 1em;
 }
+
+label {
+    margin-top: 1em;
+    display: inline-block;
+    width: 16em;
+}
+
 
 #alipay img:hover {
     filter: drop-shadow(0 0 2em #069be0);
@@ -98,7 +113,15 @@ button:focus-visible {
         background-color: #ffffff;
     }
 
+    a {
+        color: #666;
+    }
+
     button {
         background-color: #f9f9f9;
+    }
+
+    img {
+        border: 1px solid #eee;
     }
 }
